@@ -4,8 +4,19 @@
 
 Веб-приложение, разработанное с использованием Flask и SQLAlchemy, представляет собой систему управления данными для организации, занимающейся кредитами.
 
-<img width="592" alt="Снимок экрана 2024-05-27 в 10 39 43" src="https://github.com/sshyta/CreditOrg/assets/86688897/5423d94a-9d5c-4cb6-929d-45efad94cd32">
+```
+Создание базового класса
+Base = sqlalchemy.orm.declarative_base()
 
+Определение URI для базы данных
+DATABASE_URI = 'postgresql://postgres:467912@localhost:5432/SSS'
+
+Создание двигателя (engine)
+engine = create_engine(DATABASE_URI)
+
+Создание сессии (session) с использованием scoped_session
+Session = scoped_session(sessionmaker(bind=engine))
+```
 
 ## Определение URI для базы данных:
 Создали строку подключения к базе данных PostgreSQL, используя информацию о имени пользователя, пароле, хосте и названии базы данных:
