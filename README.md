@@ -1,8 +1,12 @@
 # CreditOrg
 <img width="647" alt="Снимок экрана 2024-05-27 в 10 37 43" src="https://github.com/sshyta/CreditOrg/assets/86688897/8774abcf-e029-45a0-a27b-7818ffdbdc41">
+
+
 Веб-приложение, разработанное с использованием Flask и SQLAlchemy, представляет собой систему управления данными для организации, занимающейся кредитами.
 
 <img width="592" alt="Снимок экрана 2024-05-27 в 10 39 43" src="https://github.com/sshyta/CreditOrg/assets/86688897/5423d94a-9d5c-4cb6-929d-45efad94cd32">
+
+
 ##Определение URI для базы данных:
 Создали строку подключения к базе данных PostgreSQL, используя информацию о имени пользователя, пароле, хосте и названии базы данных:
 DATABASE_URI = 'postgresql://username:467912@hostname/SSS'
